@@ -1,16 +1,47 @@
 * {
-  box-sizing:border-box;
-}
-html{
-  background:#eee;
-  background: url("../img/flagF4D.png") center no-repeat;
+    box-sizing: border-box;
 }
 
-body{
-  max-width: 30em;
-  margin: 1em auto;
-  padding: 1em;
-  background: #fff;
-  border-radius: 1em;
-  box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+html {
+    background: #eee;
+    background: url("../img/flagF4D.png") center no-repeat;
 }
+
+body {
+    max-width: 30em;
+    margin: 1em auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0.5em 0.5em 0.5em rgba(68, 68, 68, 0.6);
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+nav {
+    display: flex;
+}
+
+#iconen {
+    align-content: flex-end;
+}
+
+#comedy, #actie {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+h1 {
+    margin-right: 25%;
+}
+
+img {
+    width: 100%;
+    padding-right: 2.5px;        padding-left: 2.5px;
+}
+
+
