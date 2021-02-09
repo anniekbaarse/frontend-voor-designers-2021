@@ -29,6 +29,10 @@ nav {
     align-content: flex-end;
 }
 
+.material-icons {
+    cursor: pointer;
+}
+
 #comedy, #actie {
     display: flex;
     flex-direction: row;
@@ -43,5 +47,15 @@ img {
     width: 100%;
     padding-right: 2.5px;        padding-left: 2.5px;
 }
+
+
+#favorietenVol.geklikt {
+    color: red;
+}
+
+#favorietenLeeg.geklikt {
+    color: red;
+}
+
 
 

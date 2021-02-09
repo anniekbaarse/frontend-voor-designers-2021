@@ -7,20 +7,21 @@
 
 
 /* favorieten hartje */
-var favorieten = document.getElementById('favorieten');
-var teller = document.getElementById('aantalDuimpjes');
+var favorietenLeeg = document.getElementById('favorietenLeeg');
+var favorietenVol = document.getElementById('favorietenVol');
 
 function hartjeGevuld() {
-    favorieten.classList.toggle('geklikt');
+    favorietenLeeg.classList.toggle('geklikt');
     // zodat hartje weer leeg wordt //
-    favorieten.classList.remove('geklikt');
+    favorietenVol.classList.remove('geklikt');
     // kijken of het hartje gevuld is of niet //
+}
 
-    if (favorieten.classList.contains('geklikt')) {
-        teller.innerHTML = '+10 likes'
-    } else {
-        teller.innerHTML = '+9 likes'
-    }
+function hartjeGeleegd() {
+    favorietenVol.classList.toggle('geklikt');
+    // zodat hartje weer leeg wordt //
+    favorietenLeeg.classList.remove('geklikt');
+    // kijken of het hartje gevuld is of niet //
 }
 
 //function duimOmlaagGeklikt() {
@@ -36,7 +37,8 @@ function hartjeGevuld() {
 //    }
 //}
 
-favorieten.addEventListener('click', hartjeGevuld);
+favorietenLeeg.addEventListener('click', hartjeGevuld);
+favorietenVol.addEventListener('click', hartjeGeleegd);
 
 
 // https://stackoverflow.com/questions/48900061/toggle-heart-shaped-html-code-in-javascript
