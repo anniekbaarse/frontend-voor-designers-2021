@@ -7,6 +7,51 @@ html {
     background: url("../img/flagF4D.png") center no-repeat;
 }
 
+/* NAV */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header a {
+    position: relative;
+    padding: .125em .375em;
+    font-size: 2em;
+    line-height: 1em;
+    text-decoration: none;
+    border-radius: .25rem;
+    left: 4.5em;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+/* getalletjes */
+header a span {
+    position: absolute;
+    min-width: 1.25em;
+    line-height: 1.25em;
+    padding: 0 .25em;
+    right: .5em;
+    top: -.125em;
+    font-size: .375em;
+    text-align: center;
+    color: white;
+    background-color: crimson;
+    border-radius: .625em;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
 body {
     max-width: 30em;
     margin: 1em auto;
@@ -16,46 +61,45 @@ body {
     box-shadow: 0.5em 0.5em 0.5em rgba(68, 68, 68, 0.6);
 }
 
-a {
-    text-decoration: underline;
-    color: black;
-}
-
-nav {
-    display: flex;
-}
-
-#iconen {
-    align-content: flex-end;
-}
-
-.material-icons {
-    cursor: pointer;
-}
-
-#comedy, #actie {
+/* de verschillende secties wat betreft filmgenre */
+#comedy,
+#actie {
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
 
+/* de titel van de pagina */
 h1 {
     margin-right: 25%;
 }
 
+/* de afbeeldingen van de films die te zien zijn */
 img {
     width: 100%;
-    padding-right: 2.5px;        padding-left: 2.5px;
+    padding-right: 2.5px;
+    padding-left: 2.5px;
 }
 
-
-#favorietenVol.geklikt {
-    color: red;
+article button {
+  font-family: 'Saira', sans-serif;
+  background:none;
+  border:none;
+  border-radius:.25rem;
+  cursor:pointer;
 }
 
-#favorietenLeeg.geklikt {
-    color: red;
+article button.wish {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: flex-end;
+    padding: .125em .375em;
+    font-size: 2em;
+    line-height: 1em;
+    border: none;
+    background: none;
 }
 
-
-
+article button.wish:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
