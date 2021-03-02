@@ -6,8 +6,7 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 
 # Project titel
-Beschrijf hier je eigen project.
-En voeg een link naar je demo toe.
+Ik heb gekozen om de instellingen van een foto-overzichtpagina te ontwerpen. De instellingen die ik ga toepassen zijn: font-size door middel van een slider, night vision door middel van toggle buttons en het aantal kolommen van foto's door middel van buttons. Vervolgens kun je alle instellingen met de opslaan button bevestigen en zal dit worden toegepast.
 
 ## interface
 Leg de interface uit.
