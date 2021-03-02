@@ -8,6 +8,9 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 # Project titel
 Ik heb gekozen om de instellingen van een foto-overzichtpagina te ontwerpen. De instellingen die ik ga toepassen zijn: font-size door middel van een slider, night vision door middel van toggle buttons en het aantal kolommen van foto's door middel van buttons. Vervolgens kun je alle instellingen met de opslaan button bevestigen en zal dit worden toegepast.
 
+## Breakdown-schets
+<img src="img/Scanned Document.pdf">
+
 ## interface
 Leg de interface uit.
 
