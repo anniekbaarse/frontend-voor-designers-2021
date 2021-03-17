@@ -12,46 +12,28 @@
 <body>
     <header></header>
     <main>
-        <h1>Settings</h1>
+        <section class="container">
+            <img class="image" src="img/darkbedroom.jpg" alt="">
+            <img class="image" src="img/greenbedroom.jpg" alt="">
+            <img class="image" src="img/greybedroom.jpg" alt="">
+            <img class="image" src="img/lightbedroom.jpg" alt="">
+        </section>
 
-        <h2>Font-size</h2>
+
         <div class="slidecontainer">
-            <input type="range" min="10px" max="20px" value="18px" class="slider" id="myRange">
+            <input id="ranger" type="range" min="1" max="100" value="100" class="slider" id="myRange">
         </div>
-        <!-- https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
 
-        <h2>Night Vision</h2>
-        <label class="theme">Light
-            <input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-        </label>
+        <div class="radiocontainer" id="background">
+            <form name="theme" method="post" action="">
+                <p>
+                    <input type="radio" name="theme" value="radio" checked="checked" onClick="changeColour('light')">Light
+                    <br>
+                    <input type="radio" name="theme" value="radio" onClick="changeColour('dark')">Dark
+                    <br>
+            </form>
+        </div>
 
-        <label class="theme">Dark
-            <input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-        </label>
-        <!-- https://www.w3schools.com/howto/howto_css_custom_checkbox.asp -->
-
-        <h2>Columns of photo's</h2>
-        <div class="columns">
-            <img src="" alt="One column">
-            <button class="btn">Button</button>
-        </div>
-        <div class="columns">
-            <img src="" alt="Two columns">
-            <button class="btn">Button</button>
-        </div>
-        <div class="columns">
-            <img src="" alt="Three columns">
-            <button class="btn">Button</button>
-        </div>
-        <div class="columns">
-            <img src="" alt="Four columns">
-            <button class="btn">Button</button>
-        </div>
-        <!-- https://www.w3schools.com/howto/howto_css_button_on_image.asp -->
-
-        <input type="submit">
     </main>
     <script src="js/script.js" type="text/javascript"></script>
 </body></html>

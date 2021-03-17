@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background: #03002E;
+    transition-delay: 0.5s;
+}
+
+.slidecontainer {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.radiocontainer {
+    position: absolute;
+    right: 30px;
+    top: 60px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.image {
+    flex-basis: 50%;
+}
+
+img {
+    padding: 10px;
+    height: 350px;
+    width: auto;
+}
