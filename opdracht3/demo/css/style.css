@@ -5,24 +5,20 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color: lightgray;
+    font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
     transition: background 0.2s linear;
 }
 
 body.dark {
-    background: #03002E;
+    background: #727272;
     transition-delay: 0.5s;
-}
-
-.slidecontainer {
-    position: absolute;
-    right: 30px;
-    top: 30px;
 }
 
 .radiocontainer {
@@ -40,13 +36,50 @@ body.dark {
     margin-top: 50px;
 }
 
-/*
-.image {
-    flex-basis: 50%;
+.results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-*/
 
-img {
+.result {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+}
+
+.result img {
+    /* wat doet deze code? */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: darksalmon;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
     padding: 10px;
-    width: auto;
+    margin: 10px;
+    width: 300px;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+button:focus {
+    outline: none;
 }
