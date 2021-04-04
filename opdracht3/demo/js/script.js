@@ -2,6 +2,35 @@
 const dog_btn = document.getElementById('dog_btn');
 const dog_result = document.getElementById('dog_result');
 
+// click eventlistener toevoegen aan de button
+dog_btn.addEventListener('click', getRandomDog);
+
+/*
+// keypress eventlistener toevoegen aan de button
+document.querySelector('button').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        function getRandomDog();
+    }
+});
+*/
+
+// random hondenafbeelding toevoegen
+function getRandomDog() {
+    // api ophalen
+    fetch('https://random.dog/woof.json')
+        .then(res => res.json())
+        .then(data => {
+            // als de data een .mp4 bestand is nog een keer de functie doorlopen
+            if (data.url.includes('.mp4')) {
+                getRandomDog();
+            }
+            // als de data een img is, de source van de afbeelding toevoegen aan de html om de afbeelding te weergeven
+            else {
+                dog_result.innerHTML = `<img src=${data.url} alt="dog" />`;
+            }
+        });
+}
+
 // eventlistener toevoegen aan de button
 dog_btn.addEventListener('click', getRandomDog);
 
@@ -39,6 +68,5 @@ function getRandomDog() {
             }
         });
 }
-
 
 // Bron: https://www.youtube.com/watch?v=7f2HNadULOs
