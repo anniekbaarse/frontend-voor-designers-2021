@@ -10,31 +10,27 @@
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <section class="container">
-            <img class="image" src="img/darkbedroom.jpg" alt="a dark bedroom" width="142,5" height="412,5">
-            <img class="image" src="img/greenbedroom.jpg" alt="a green bedroom" width="142,5" height="412,5">
-            <img class="image" src="img/greybedroom.jpg" alt="a grey bedroom" width="142,5" height="412,5">
-            <img class="image" src="img/lightbedroom.jpg" alt="a light bedroom" width="142,5" height="412,5">
-            <img id="image" src="img/orangebedroom.jpg" alt="an orange bedroom" width="142,5" height="412,5" />
-        </section>
 
-
-        <div class="slidecontainer">
-            <input id="ranger" type="range" min="1" max="100" value="100" class="slider">
+    <div class="results">
+        <div id="dog_result" class="result">
+            <p> Random hondenafbeelding </p>
         </div>
+    </div>
 
-        <div class="radiocontainer" id="background">
-            <form name="theme" method="post" action="">
-                <p>
-                    <input type="radio" name="theme" value="radio" checked="checked" onClick="changeColour('light')">Light
-                    <br>
-                    <input type="radio" name="theme" value="radio" onClick="changeColour('dark')">Dark
-                    <br>
-            </form>
-        </div>
+    <div class="buttons">
+        <button id="dog_btn" tabindex="2"> Vind een hond </button>
+    </div>
 
-    </main>
+
+    <div class="radiocontainer" id="background">
+        <form name="theme" method="post" action="">
+            <p>
+                <input type="radio" name="theme" value="radio" checked="checked" onClick="changeColour('light')" tabindex="0">Light
+                <br>
+                <input type="radio" name="theme" value="radio" onClick="changeColour('dark')" tabindex="1">Dark
+                <br>
+        </form>
+    </div>
+
     <script src="js/script.js" type="text/javascript"></script>
 </body></html>
